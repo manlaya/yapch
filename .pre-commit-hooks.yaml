@@ -1,0 +1,7 @@
+# allow to expose pre-commit hooks for other repos
+- id: check-uncommitted-test-data
+  name: Check uncommitted test data
+  description: fail if a file referenced by the tests is gitignored or untracked
+  entry: check_uncommitted_test_data.sh
+  language: script
+  files: ^tests/
